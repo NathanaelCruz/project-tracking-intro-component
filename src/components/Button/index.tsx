@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     title?: string,
     classNameButton?: string
 }
-
 const Button: React.FunctionComponent<ButtonProps> = (props) => {
+    
     return (
-        <button className={`btn-default ${props.classNameButton}`}>
+        <button 
+            className={`btn-default ${(props.classNameButton) ? props.classNameButton : ''}`}
+            
+        >
             {props.title ? props.title : props.children}
         </button>
     )

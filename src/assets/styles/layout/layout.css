@@ -2,8 +2,124 @@
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
+}
+
+.landing-content {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-main,
+.header-link {
     display: flex;
+    align-items: center;
+}
+
+.header-main {
+    width: 100%;
+    justify-content: space-between;
+    padding: 3.5rem 2.5rem;
+}
+
+.header-link {
+    justify-content: center;
+}
+
+.header-menu-navigation-content {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    width: 80vw;
+    top: 9rem;
+    left: 10vw;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    border-radius: 0.4rem;
+    padding: 0 2.5rem;
+    overflow: hidden;
+}
+
+.menu-callaction {
+    width: 100%;
+    border-top: 1px solid hsl(231, 7%, 65%);
+}
+
+.background-divisor {
+    width: 60vw;
+    height: 44rem;
+    position: absolute;
+    z-index: -1;
+    background-color: hsl(207, 33%, 95%);
+    right: -10vw;
+    top: -4rem;
+    border-radius: 4rem;
+}
+
+.content-responsive-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-responsive-image {
+    width: 138vw;
+    margin-bottom: 7rem;
+}
+
+.content-responsive-call {
+    padding: 0rem 2.5rem;
+}
+
+.content-responsive-call-title span,
+.content-responsive-call-subtitle h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.content-responsive-call-title,
+.content-responsive-call-subtitle,
+.content-responsive-call-explain {
+    margin-bottom: 2rem;
+}
+
+.content-responsive-call-title,
+.content-responsive-call-buttons {
+    display: flex;
+}
+
+.content-responsive-call-title span {
+    font-weight: 700;
+    background-color: hsl(230, 29%, 20%);
+    width: 5.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+.content-responsive-call-title p {
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.content-responsive-call-subtitle h1 {
+    font-size: 4.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(230, 29%, 20%);
+    line-height: 1;
+}
+
+.content-responsive-call-explain h4 {
+    color: hsl(230, 11%, 40%);
+    font-weight: 400;
+}
+
+.content-responsive-call-buttons {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }

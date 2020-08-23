@@ -1,0 +1,31 @@
+.btn-default {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: hsl(231, 7%, 65%);
+    padding: 1rem;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0.6rem;
+}
+
+.content-responsive-call-buttons .btn-default {
+    width: 48%;
+}
+
+.btn-default.btn-call-action {
+    background-color: hsl(0, 100%, 68%);
+    color: #fff;
+}
+
+.btn-default {
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.btn-default.btn-login {
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 2rem;
+    width: 100%;
+}

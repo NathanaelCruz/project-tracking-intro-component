@@ -1,0 +1,29 @@
+.btn-default:focus,
+.btn-default:active {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0.4rem 0.2rem hsl(231, 7%, 65%);
+}
+
+.btn-default.btn-call-action:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.hidden {
+    height: 0;
+    box-shadow: 0;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+
+.visible {
+    height: 26rem;
+    box-shadow: 0rem 0rem 1.2rem 0.3rem hsl(231, 7%, 65%);
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
