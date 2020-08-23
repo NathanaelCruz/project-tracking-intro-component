@@ -2,13 +2,24 @@
     font-size: 60%;
 }
 
+* {
+    line-height: 1.5;
+}
+
 *,
 body,
 html {
-    font-family: 'Barlow', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    width: 100vw;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.8rem Barlow;
 }
 
 ul {
@@ -17,4 +28,18 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+@media(min-width: 767px) {
+     :root {
+        font-size: 62.7%;
+    }
 }
