@@ -16,3 +16,16 @@
     font-size: 2.3rem;
     color: hsl(230, 29%, 20%);
 }
+
+@media(min-width: 767px) {
+    .menu-content {
+        width: 65%;
+        flex-direction: row;
+    }
+    .menu-content li a {
+        font-size: 1.6rem;
+    }
+    .header-main {
+        padding: 5.5rem 9rem;
+    }
+}

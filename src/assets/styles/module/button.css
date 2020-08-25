@@ -29,3 +29,15 @@
     padding: 2rem;
     width: 100%;
 }
+
+@media(min-width: 767px) {
+    .menu-content {
+        flex-direction: row;
+    }
+    .btn-default.btn-login {
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.6rem;
+        margin-left: 3rem;
+    }
+}

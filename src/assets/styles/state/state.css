@@ -5,6 +5,10 @@
     box-shadow: 0 0 0.4rem 0.2rem hsl(231, 7%, 65%);
 }
 
+.btn-default:hover {
+    cursor: pointer;
+}
+
 .btn-default.btn-call-action:hover {
     opacity: 0.8;
     transition: 0.2s ease-in;
@@ -26,4 +30,21 @@
     transition: 0.3s ease-in;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
+}
+
+.menu-content li a:hover {
+    text-decoration: underline;
+}
+
+@media(min-width: 767px) {
+    .btn-hamburguer {
+        display: none;
+    }
+    .visible {
+        height: auto;
+        box-shadow: none;
+    }
+    .btn-default.btn-login:hover {
+        text-decoration: underline;
+    }
 }

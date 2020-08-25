@@ -1,4 +1,4 @@
-import React, {useState, MouseEvent} from 'react'
+import React, {useState, MouseEvent, useEffect} from 'react'
 import Button from '../Button'
 
 interface MenuNavigationPropsItem {
@@ -15,6 +15,11 @@ interface MenuNavigationPropsItems {
 const MenuNavigation: React.FunctionComponent<MenuNavigationPropsItems> = (props) => {
 
     const [classShow, setClassShow] = useState("hidden")
+    useEffect(() => {
+        if(window.screen.width >= 767){
+            setClassShow("visible")
+        }
+    }, [])
     const setClassMenu = (event: MouseEvent) => {
         event.preventDefault()
         if(classShow === "hidden"){
@@ -40,7 +45,7 @@ const MenuNavigation: React.FunctionComponent<MenuNavigationPropsItems> = (props
                     />
                 </section>
             </section>
-            <span className="btn-default btn-hamburguer"
+            <div className="btn-default btn-hamburguer"
             onClick={setClassMenu}
             role="button" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" role="Ícone mobile">
@@ -48,7 +53,7 @@ const MenuNavigation: React.FunctionComponent<MenuNavigationPropsItems> = (props
                         <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
                     </g>
                 </svg>
-            </span>
+            </div>
         </section>
     )
 }
