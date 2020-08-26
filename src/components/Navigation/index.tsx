@@ -49,7 +49,7 @@ const MenuNavigation: React.FunctionComponent<MenuNavigationPropsItems> = (props
             <div className="btn-default btn-hamburguer"
             onClick={setClassMenu}
             role="button" aria-label="btn-hamburguer" >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" role="Ícone mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
                     <g fill="#242942" fill-rule="evenodd">
                         <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
                     </g>
